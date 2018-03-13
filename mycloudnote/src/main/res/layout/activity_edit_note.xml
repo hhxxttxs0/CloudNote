@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_note"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.mycloudnote.activity.NoteEditActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar_edit"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/id_et_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="top"
+            android:padding="10dp"
+            android:maxLength="30"
+            android:inputType="text"
+            android:maxLines="1"
+            android:hint="请在此处输入标题"/>
+        <EditText
+            android:id="@+id/id_et_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:padding="10dp"
+            android:hint="请在此处编辑笔记内容"/>
+        <!--
+        <com.example.yangtianrui.notebook.widget.LineEditText
+            android:id="@+id/id_et_content"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/id_btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:text="Done" />
+        -->
+    </LinearLayout>
+
+</LinearLayout >

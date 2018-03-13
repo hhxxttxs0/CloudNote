@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_change_psw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mycloudnote.activity.ChangePswActivity">
+
+    <RelativeLayout
+        android:id="@+id/change_psw_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center" >
+        <FrameLayout
+            android:id="@+id/change_psw_old_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/et_change_psw_old"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="请输入原密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp" >
+            </EditText>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/change_psw_new_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/change_psw_old_layout"
+            android:layout_marginTop="6dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/et_change_psw_new"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入新密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp" >
+
+            </EditText>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/change_psw_verify_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/change_psw_new_layout"
+            android:layout_marginTop="6dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/et_change_psw_verify"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请确认密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp" >
+
+            </EditText>
+        </FrameLayout>
+        <Button
+            android:id="@+id/btn_change_psw_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/change_psw_verify_layout"
+            android:layout_marginTop="30dp"
+            android:background="#ff336699"
+            android:textColor="@android:color/white"
+
+            android:gravity="center"
+            android:text="确认" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
